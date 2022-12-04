@@ -1,5 +1,11 @@
 #include <SDL/SDL.h>
 
+struct Vector2
+{
+    float x;
+    float y;
+};
+
 class Game
 {
 public:
@@ -22,4 +28,13 @@ private:
     SDL_Window *mWindow;
     // 게임이 계속 실행돼야 하는지를 판단
     bool mIsRunning;
+
+    const int WINDOW_WIDTH = 1024;
+    const int WINDOW_HEIGHT = 764;
+
+    Vector2 mPaddlePos;
+    Vector2 mBallPos;
+    Uint32 mTicksCount;
+    int mPaddleDir;
+    Vector2 mBallVel;
 };
