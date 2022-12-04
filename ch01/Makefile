@@ -5,9 +5,9 @@ CXXFLAGS = -Wall -O2
 # 링커 옵션
 LDFLAGS = -lmingw32 -lSDL2main -lSDL2
 #라이브러리 경로
-LIBRARY = -Llib
+LIBRARY = -L../lib
 # 헤더파일 경로
-INCLUDE = -Iinclude
+INCLUDE = -I../include
 # 소스 파일 디렉터리
 SRC_DIR = ./src
 # 오브젝트 파일 디렉터리
